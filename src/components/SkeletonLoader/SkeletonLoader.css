@@ -1,0 +1,79 @@
+.skeleton-loader {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton-loader.circular {
+  border-radius: 50%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Skeleton Text */
+.skeleton-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton-text-line {
+  margin-bottom: 8px;
+}
+
+/* Skeleton Card */
+.skeleton-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-card-content {
+  padding: 20px;
+}
+
+.skeleton-card-image {
+  margin-bottom: 0;
+}
+
+.skeleton-card-title {
+  margin-bottom: 15px;
+}
+
+.skeleton-card-text {
+  margin-bottom: 20px;
+}
+
+.skeleton-card-button {
+  border-radius: 4px;
+}
+
+/* Skeleton Navbar */
+.skeleton-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skeleton-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .skeleton-nav-links {
+    display: none;
+  }
+}

@@ -1,0 +1,163 @@
+.careers-page {
+  width: 100%;
+}
+
+/* Page Header - Using the same styles as About page */
+
+/* Benefits Section */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Open Positions */
+.open-positions {
+  background-color: #f9f9f9;
+}
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.position-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.position-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.position-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.position-type {
+  background-color: #333;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.position-location {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.position-description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.position-requirements h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.position-requirements ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.position-requirements li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.position-requirements li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+/* Application Process */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.process-step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.process-step p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .position-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}

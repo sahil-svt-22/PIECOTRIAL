@@ -1,0 +1,209 @@
+.capabilities-page {
+	width: 100%;
+}
+
+/* Page Header - Using the same styles as About page */
+
+/* Capabilities Intro */
+.section-description {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto 50px;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color: #444;
+}
+
+/* Capabilities List */
+.capability-item {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	margin-bottom: 80px;
+}
+
+.capability-item.reverse {
+	flex-direction: row-reverse;
+}
+
+.capability-content {
+	flex: 1;
+}
+
+.capability-content h3 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.capability-content h3:after {
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 3px;
+	background-color: #333;
+	bottom: -10px;
+	left: 0;
+}
+
+.capability-content p {
+	margin-bottom: 20px;
+	line-height: 1.8;
+	color: #444;
+}
+
+.capability-features {
+	list-style: none;
+	padding: 0;
+}
+
+.capability-features li {
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	padding-left: 25px;
+}
+
+.capability-features li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #333;
+	font-weight: bold;
+}
+
+.capability-image {
+	flex: 1;
+}
+
+.capability-image .image-placeholder1 {
+	width: 100%;
+	padding-top: 75%;
+	background-image: url("../../../Assets/HVAC.jpeg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+	background-color: #eee;
+	border-radius: 5px;
+
+}
+
+.capability-image .image-placeholder2 {
+	width: 100%;
+	padding-top: 75%;
+	background-image: url("../../../Assets/electonic.jpeg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+/* Equipment Section */
+.equipment {
+	background-color: #f9f9f9;
+}
+
+.equipment-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.equipment-item {
+	background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.equipment-item h3 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.equipment-item h3:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: #333;
+	bottom: -8px;
+	left: 0;
+}
+
+.equipment-item ul {
+	list-style: none;
+	padding: 0;
+}
+
+.equipment-item li {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+}
+
+/* Industries Section */
+.industries-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+}
+
+.industry-card {
+	background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+	transform: translateY(-10px);
+}
+
+.industry-icon {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.industry-card h3 {
+	font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+	.capability-item {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.capability-item.reverse {
+		flex-direction: column;
+	}
+
+	.capability-content,
+	.capability-image {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.equipment-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.industries-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.industries-grid {
+		grid-template-columns: 1fr;
+	}
+}
